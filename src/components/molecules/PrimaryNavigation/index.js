@@ -26,6 +26,7 @@ const PrimaryNavigation = (props) => {
     <Nav {...props}>
       <li><Link to="/" exact activeClassName="active">Home</Link></li>
       <li><Link to="/blog" activeClassName="active">Blog</Link></li>
+      <li><Link href="https://github.com/Mika-net" activeClassName="active">GitHub</Link></li>
     </Nav>
   )
 }

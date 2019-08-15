@@ -1,11 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { grayscaleNavigation } from 'components'
+import { PrimaryNavigation } from 'components'
 
-storiesOf('grayscaleNavigation', module)
+storiesOf('PrimaryNavigation', module)
   .add('default', () => (
-    <grayscaleNavigation />
+    <PrimaryNavigation />
   ))
   .add('reverse', () => (
-    <grayscaleNavigation reverse />
+    <PrimaryNavigation reverse />
   ))

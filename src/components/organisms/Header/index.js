@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { size } from 'styled-theme'
 
-import { IconLink, grayscaleNavigation, Block } from 'components'
+import { IconLink, PrimaryNavigation, Block } from 'components'
 
 const Wrapper = styled(Block)`
   display: flex;
@@ -27,8 +27,8 @@ const Header = (props) => {
   return (
     <Wrapper opaque reverse {...props}>
       <InnerWrapper>
-        <IconLink to="/" icon="arc" height={100} />
-        <grayscaleNavigation reverse />
+        <IconLink to="/" icon="jest" height={100} />
+        <PrimaryNavigation reverse height={100} />
       </InnerWrapper>
     </Wrapper>
   )
