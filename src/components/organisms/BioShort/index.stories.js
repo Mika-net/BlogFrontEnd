@@ -1,8 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Hero } from 'components'
+import { BioShort } from 'components'
 
-storiesOf('Hero', module)
+storiesOf('BioShort', module)
   .add('default', () => (
-    <Hero />
+    <BioShort />
   ))

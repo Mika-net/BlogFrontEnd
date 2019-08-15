@@ -22,7 +22,7 @@ const Header = styled.header`
   z-index: 999;
 `
 
-const Hero = styled.section``
+const BioShort = styled.section``
 
 const Sponsor = styled.section``
 
@@ -38,12 +38,12 @@ const Footer = styled.footer`
 `
 
 const PageTemplate = ({
-  header, hero, sponsor, children, footer, ...props
+  header, bioShort, sponsor, children, footer, ...props
 }) => {
   return (
     <Wrapper {...props}>
       <Header>{header}</Header>
-      {hero && <Hero>{hero}</Hero>}
+      {BioShort && <BioShort>{bioShort}</BioShort>}
       {sponsor && <Sponsor>{sponsor}</Sponsor>}
       <Content>{children}</Content>
       <Footer>{footer}</Footer>
@@ -53,7 +53,7 @@ const PageTemplate = ({
 
 PageTemplate.propTypes = {
   header: PropTypes.node.isRequired,
-  hero: PropTypes.node,
+  BioShort: PropTypes.node,
   sponsor: PropTypes.node,
   footer: PropTypes.node.isRequired,
   children: PropTypes.any.isRequired,

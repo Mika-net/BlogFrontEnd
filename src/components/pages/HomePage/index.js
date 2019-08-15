@@ -2,14 +2,14 @@
 import React from 'react'
 
 import {
-  PageTemplate, Header, Hero, Footer, FeatureList,
+  PageTemplate, Header, BioShort, Footer, FeatureList,
 } from 'components'
 
 const HomePage = () => {
   return (
     <PageTemplate
       header={<Header />}
-      hero={<Hero />}
+      bioShort={<BioShort />}
       footer={<Footer />}
     >
       <FeatureList />
