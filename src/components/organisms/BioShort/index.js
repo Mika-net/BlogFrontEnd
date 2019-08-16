@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { palette, size } from 'styled-theme'
 
 import {
+  Bio,
   Block,
   Paragraph,
   IconLink,
@@ -11,6 +12,7 @@ import {
   PreformattedText,
   Heading,
   Tooltip,
+  Image
 } from 'components'
 
 const Wrapper = styled(Block)`
@@ -82,10 +84,14 @@ const BioShort = (props) => {
     <Wrapper opaque reverse {...props}>
       <InnerWrapper>
         <Section>
-
+        <Bio
+          image="sleeping.png"
+          title="me"
+        >
+        </Bio>
         </Section>
         <Section>
-        
+
         </Section>
       </InnerWrapper>
     </Wrapper>

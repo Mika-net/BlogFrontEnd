@@ -17,19 +17,10 @@ const Wrapper = styled.span`
   height: 1em;
   margin: 0.1em;
   box-sizing: border-box;
-
-  & > png {
-    width: 100%;
-    height: 100%;
-    fill: currentcolor;
-    stroke: currentcolor;
-  }
 `
 
-const Image = ({ image, ...props }) => {
-  const png = require(`!raw-loader!./icons/${image}.png`)
-  return <Wrapper {...props} dangerouslySetInnerHTML={{ __html: png }} />
-}
+const Image = ({ image, ...props }) => <img  {...props} src={`/images/${image}`}/>
+
 
 Image.propTypes = {
   image: PropTypes.string.isRequired,
