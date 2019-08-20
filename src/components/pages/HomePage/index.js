@@ -2,7 +2,7 @@
 import React from 'react'
 
 import {
-  PageTemplate, Header, BioShort, Footer, FeatureList,
+  PageTemplate, Header, BioShort, Footer, SkillSetList,
 } from 'components'
 
 const HomePage = () => {
@@ -12,7 +12,7 @@ const HomePage = () => {
       bioShort={<BioShort />}
       footer={<Footer />}
     >
-      <FeatureList />
+      <SkillSetList />
     </PageTemplate>
   )
 }

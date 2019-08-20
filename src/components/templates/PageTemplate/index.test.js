@@ -21,8 +21,8 @@ it('renders header', () => {
 })
 
 it('renders BioShort', () => {
-  const wrapper = wrap({ BioShort: 'BioShort' })
-  expect(wrapper.contains('BioShort')).toBe(true)
+  const wrapper = wrap({ bioShort: 'bioShort' })
+  expect(wrapper.contains('bioShort')).toBe(true)
 })
 
 it('renders sponsor', () => {

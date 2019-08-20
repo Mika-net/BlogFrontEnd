@@ -21,7 +21,8 @@ const Wrapper = styled.div`
 const StyledImage = styled(Image)`
   flex: none;
   @media screen and (max-width: 640px) {
-  }
+    width: 32px;
+    }
 `
 
 const Text = styled.div`
@@ -48,7 +49,7 @@ const Bio = ({
   const { soon } = props
   return (
     <Wrapper {...props}>
-      {image && <StyledImage image={image} />}
+      {image && <StyledImage image={image} width={164} />}
       <Text>
         <Heading level={2}>
           {link ? <Link href={link}>{title}</Link> : title}
@@ -56,13 +57,13 @@ const Bio = ({
         <Paragraph>{children}</Paragraph>
         {code && <PreformattedText block>{code}</PreformattedText>}
       </Text>
-      {soon && <StyledBadge palette="grayscale">soon</StyledBadge>}
+      {soon && <StyledBadge palette="primary">soon</StyledBadge>}
     </Wrapper>
   )
 }
 
 Bio.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   image: PropTypes.string,
   link: PropTypes.string,
   soon: PropTypes.bool,

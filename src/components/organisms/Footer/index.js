@@ -25,7 +25,7 @@ const Footer = (props) => {
         {' '}
 by
         {' '}
-        <Link href="https://github.com/diegohaz">Haz</Link>
+        <Link href="https://github.com/mika-net">Mika</Link>
       </Credits>
     </Wrapper>
   )

@@ -12,7 +12,8 @@ import {
   PreformattedText,
   Heading,
   Tooltip,
-  Image
+  Image,
+  Link
 } from 'components'
 
 const Wrapper = styled(Block)`
@@ -51,7 +52,7 @@ const Section = styled.section`
 `
 
 const Text = styled(Paragraph)`
-  color: ${palette('grayscale', 3, true)};
+  color: ${palette('grayscale', 1, true)};
   font-weight: 300;
   font-size: 1.35rem;
   line-height: 1.35em;
@@ -86,12 +87,23 @@ const BioShort = (props) => {
         <Section>
         <Bio
           image="sleeping.png"
-          title="me"
+          link="https://github.com/diegohaz/arc/tree/redux"
         >
         </Bio>
         </Section>
         <Section>
+        <Text>
+            This is my website, written in {' '}
+            <IconLink reverse icon="react" href="https://facebook.github.io/react/">React</IconLink>
+            {' '}
+            , following based on the
+            {' '}
+              <IconLink reverse icon="atomic-design" href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</IconLink>
+            {' '}
+            methodology. The goal is to have a fully functional blog engine created in{' '}
+            <Link reverse href="http://bradfrost.com/blog/post/atomic-web-design/">NodeJS</Link> complete with an Oauth2 login system, in which I plan to go over the projects I am Involved in, and what I learn from them each week.
 
+        </Text>
         </Section>
       </InnerWrapper>
     </Wrapper>
