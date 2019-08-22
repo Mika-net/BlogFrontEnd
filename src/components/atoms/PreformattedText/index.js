@@ -6,8 +6,9 @@ import { ifProp } from 'styled-tools'
 const PreformattedText = styled.pre`
   display: ${ifProp('block', 'block', 'inline')};
   font-family: ${font('pre')};
-  color: ${palette({ grayscale: 0 }, 1)};
-  background-color: ${palette('grayscale', 1, true)};
+  color: ${palette('white', 0, false)};
+  text-color: ${palette('white', 0, false)};
+  background-color: ${palette('grayscale', 0, false)};
   padding: ${ifProp('block', '1em', '0 0.5em')};
   grayscale-space: ${ifProp('wrapped', 'pre-wrap', 'nowrap')};
   overflow: auto;

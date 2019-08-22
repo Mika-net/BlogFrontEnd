@@ -28,7 +28,7 @@ Heading.propTypes = {
 
 Heading.defaultProps = {
   level: 1,
-  palette: 'grayscale',
+  palette: 'primary',
 }
 
 export default Heading

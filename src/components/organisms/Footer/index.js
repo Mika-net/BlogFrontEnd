@@ -2,11 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { palette } from 'styled-theme'
 
-import { Paragraph, Link, Icon } from 'components'
+import { Paragraph, Link, Icon, Block } from 'components'
 
-const Wrapper = styled.div`
-  background-color: ${palette('grayscale', 1, true)};
-  padding: 2rem;
+
+const Wrapper = styled(Block)`
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  @media screen and (max-width: 640px) {
+    padding: 0.5rem;
+  }
 `
 
 const Credits = styled(Paragraph)`
@@ -17,7 +22,7 @@ const Credits = styled(Paragraph)`
 
 const Footer = (props) => {
   return (
-    <Wrapper {...props}>
+    <Wrapper opaque reverse {...props}>
       <Credits>
         Made with
         {' '}

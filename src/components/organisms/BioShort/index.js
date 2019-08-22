@@ -82,14 +82,16 @@ const Instructions = styled.div`
 
 const BioShort = (props) => {
   return (
+
     <Wrapper opaque reverse {...props}>
       <InnerWrapper>
         <Section>
-        <Bio
+      {/*}  <Bio
           image="sleeping.png"
           link="https://github.com/diegohaz/arc/tree/redux"
         >
-        </Bio>
+
+        </Bio>*/}
         </Section>
         <Section>
         <Text>

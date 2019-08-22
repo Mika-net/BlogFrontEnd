@@ -57,7 +57,7 @@ const Bio = ({
         <Paragraph>{children}</Paragraph>
         {code && <PreformattedText block>{code}</PreformattedText>}
       </Text>
-      {soon && <StyledBadge palette="primary">soon</StyledBadge>}
+      {soon && <StyledBadge palette="grayscale">soon</StyledBadge>}
     </Wrapper>
   )
 }
