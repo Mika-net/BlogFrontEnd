@@ -153,9 +153,6 @@ body {
     }
 }
 `
-
-
-
   const Card = ({
     image, title, link, children, ...props
   }) => {
@@ -174,9 +171,8 @@ body {
       <Paragraph>
           <p>{children}</p>
       </Paragraph>
-      <div className="continue">
-        {<a href={link}>learn more</a>}
-      </div>
+
+        <Link href={link}>learn more</Link>}
   </div>
 
 </div>
