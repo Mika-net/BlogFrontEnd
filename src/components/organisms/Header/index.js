@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { size } from 'styled-theme'
 
-import { IconLink, PrimaryNavigation, Block } from 'components'
+import { IconLink, PrimaryNavigation, Block, Image} from 'components'
 
 const Wrapper = styled(Block)`
   display: flex;
@@ -26,8 +26,9 @@ const InnerWrapper = styled.div`
 const Header = (props) => {
   return (
     <Wrapper opaque reverse {...props}>
+
       <InnerWrapper>
-        <IconLink to="/" icon="jest" height={100} />
+        <Image image="sleepingglitch.png" height={50} />
         <PrimaryNavigation reverse height={100} />
       </InnerWrapper>
     </Wrapper>
