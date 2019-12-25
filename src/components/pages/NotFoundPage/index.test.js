@@ -3,5 +3,5 @@ import { shallow } from 'enzyme'
 import NotFoundPage from '.'
 
 it('renders', () => {
-  shallow(<NotFoundPage />)
+  shallow(<NotFoundPage/>)
 })

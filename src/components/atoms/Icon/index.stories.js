@@ -5,14 +5,14 @@ import Icon from '.'
 
 storiesOf('Icon', module)
   .add('default', () => (
-    <Icon icon="close" />
+    <Icon icon="close"/>
   ))
   .add('palette', () => (
-    <Icon icon="close" palette="grayscale" />
+    <Icon icon="close" palette="grayscale"/>
   ))
   .add('palette reverse', () => (
-    <Icon icon="close" palette="grayscale" reverse />
+    <Icon icon="close" palette="grayscale" reverse/>
   ))
   .add('height', () => (
-    <Icon icon="close" height={100} />
+    <Icon icon="close" height={100}/>
   ))

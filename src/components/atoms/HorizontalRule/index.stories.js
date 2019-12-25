@@ -4,11 +4,11 @@ import HorizontalRule from '.'
 
 storiesOf('HorizontalRule', module)
   .add('default', () => (
-    <HorizontalRule />
+    <HorizontalRule/>
   ))
   .add('palette', () => (
-    <HorizontalRule palette="grayscale" />
+    <HorizontalRule palette="grayscale"/>
   ))
   .add('palette reverse', () => (
-    <HorizontalRule palette="grayscale" reverse />
+    <HorizontalRule palette="grayscale" reverse/>
   ))

@@ -4,25 +4,25 @@ import Input from '.'
 
 storiesOf('Input', module)
   .add('default', () => (
-    <Input />
+    <Input/>
   ))
   .add('reverse', () => (
-    <Input reverse />
+    <Input reverse/>
   ))
   .add('height', () => (
-    <Input height={100} />
+    <Input height={100}/>
   ))
   .add('invalid', () => (
-    <Input invalid />
+    <Input invalid/>
   ))
   .add('type textarea', () => (
-    <Input type="textarea" />
+    <Input type="textarea"/>
   ))
   .add('type checkbox', () => (
-    <Input type="checkbox" />
+    <Input type="checkbox"/>
   ))
   .add('type radio', () => (
-    <Input type="radio" />
+    <Input type="radio"/>
   ))
   .add('type select', () => (
     <Input type="select">

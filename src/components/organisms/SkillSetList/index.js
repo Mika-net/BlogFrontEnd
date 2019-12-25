@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {
-  Feature, Link, Heading, Paragraph,
-} from 'components'
+import { Feature, Heading, Paragraph } from 'components'
 
 
 const Grid = styled.div`
@@ -37,7 +35,6 @@ const StyledFeature = styled(Feature)`
 `
 
 
-
 const SkillSetList = ({ ...props }) => (
   <div {...props}>
     <StyledHeading><strong>Languages and Frameworks</strong></StyledHeading>
@@ -52,7 +49,8 @@ const SkillSetList = ({ ...props }) => (
         title="C#"
         code="git clone https://github.com/Mika-net/ApiCall MikasApiCall"
       >
-        The current most popular .Net Language, I've had experience with over the last few years. Bellow is an example API call I've made with an hour time constraint.
+        The current most popular .Net Language, I've had experience with over the last few years. Bellow is an example
+        API call I've made with an hour time constraint.
       </StyledFeature>
       <StyledFeature
         icon="react"
@@ -60,7 +58,8 @@ const SkillSetList = ({ ...props }) => (
         title="React"
         code="git clone https://github.com/Mika-net/BlogFrontEnd MikasBlogFrontEnd"
       >
-        One of several front end JavaScript frameworks that I've worked with and one of my favorites. Bellow is an example of a React app I've made part portfolio, part blog, this one.
+        One of several front end JavaScript frameworks that I've worked with and one of my favorites. Bellow is an
+        example of a React app I've made part portfolio, part blog, this one.
         {' '}
       </StyledFeature>
       <StyledFeature
@@ -77,8 +76,8 @@ const SkillSetList = ({ ...props }) => (
         title="Rust"
         code="git clone https://github.com/Mika-net/RustBook RustBook-by-mika"
       >
-      Rust is a general-purpose, multi-paradigm, compiled programming language developed by Mozilla.
-    </StyledFeature>
+        Rust is a general-purpose, multi-paradigm, compiled programming language developed by Mozilla.
+      </StyledFeature>
     </Grid>
   </div>
 )

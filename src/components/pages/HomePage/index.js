@@ -1,8 +1,7 @@
-// https://github.com/diegohaz/arc/wiki/Atomic-Design
 import React from 'react'
 
 import {
-  PageTemplate, Header, BioShort, Footer, SkillSetList,
+  BioShort, Footer, Header, PageTemplate, SkillSetList,
 } from 'components'
 
 const HomePage = () => {

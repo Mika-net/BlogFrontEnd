@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Label, Input, Block } from 'components'
+import { Block, Input, Label } from 'components'
 
 const Error = styled(Block)`
   margin: 0.5rem 0 0;
@@ -20,10 +20,14 @@ const Wrapper = styled.div`
 `
 
 const Field = ({
-  error, name, invalid, label, type, ...props
-}) => {
+                 error, name, invalid, label, type, ...props
+               }) => {
   const inputProps = {
-    id: name, name, type, invalid, 'aria-describedby': `${name}Error`, ...props,
+    id: name,
+    name,
+    type,
+    invalid,
+    'aria-describedby': `${name}Error`, ...props,
   }
   const renderInputFirst = type === 'checkbox' || type === 'radio'
   return (
@@ -32,11 +36,11 @@ const Field = ({
       {label && <Label htmlFor={inputProps.id}>{label}</Label>}
       {renderInputFirst || <Input {...inputProps} />}
       {invalid && error
-        && (
+      && (
         <Error id={`${name}Error`} role="grayscale" palette="grayscale">
           {error}
         </Error>
-        )
+      )
       }
     </Wrapper>
   )

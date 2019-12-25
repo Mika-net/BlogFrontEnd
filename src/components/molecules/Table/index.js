@@ -14,8 +14,8 @@ const StyledTable = styled.table`
 `
 
 const Table = ({
-  caption, head, foot, children, ...props
-}) => {
+                 caption, head, foot, children, ...props
+               }) => {
   const { reverse } = props
   return (
     <StyledTable {...props}>

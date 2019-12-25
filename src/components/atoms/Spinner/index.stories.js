@@ -4,11 +4,11 @@ import Spinner from '.'
 
 storiesOf('Spinner', module)
   .add('default', () => (
-    <Spinner />
+    <Spinner/>
   ))
   .add('reverse', () => (
-    <Spinner reverse />
+    <Spinner reverse/>
   ))
   .add('another palette', () => (
-    <Spinner palette="grayscale" />
+    <Spinner palette="grayscale"/>
   ))

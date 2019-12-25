@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { palette } from 'styled-theme'
 
-import { Paragraph, Link, Icon, Block } from 'components'
+import { Block, Icon, Link, Paragraph } from 'components'
 
 
 const Wrapper = styled(Block)`
@@ -26,9 +25,9 @@ const Footer = (props) => {
       <Credits>
         Made with
         {' '}
-        <Icon icon="heart" />
+        <Icon icon="heart"/>
         {' '}
-by
+        by
         {' '}
         <Link href="https://github.com/mika-net">Mika</Link>
       </Credits>

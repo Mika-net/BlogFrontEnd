@@ -10,5 +10,6 @@ it('mounts', () => {
 
 it('renders children when passed in', () => {
   const wrapper = wrap()
-  expect(wrapper.contains('test')).toBe(true)
+  expect(wrapper.contains('test'))
+    .toBe(true)
 })

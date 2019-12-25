@@ -19,7 +19,7 @@ storiesOf('IconButton', module)
     <IconButton icon="close" breakpoint={300} responsive>Decrease panel width to 300</IconButton>
   ))
   .add('without text', () => (
-    <IconButton icon="close" />
+    <IconButton icon="close"/>
   ))
   .add('collapsed', () => (
     <IconButton icon="close" collapsed>Hello</IconButton>

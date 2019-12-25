@@ -4,5 +4,5 @@ import { Footer } from 'components'
 
 storiesOf('Footer', module)
   .add('default', () => (
-    <Footer />
+    <Footer/>
   ))

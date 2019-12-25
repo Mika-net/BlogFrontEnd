@@ -2,19 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { palette, size } from 'styled-theme'
 
-import {
-  Bio,
-  Block,
-  Paragraph,
-  IconLink,
-  IconButton,
-  LogoImage,
-  PreformattedText,
-  Heading,
-  Tooltip,
-  Image,
-  Link
-} from 'components'
+import { Block, IconLink, Link, Paragraph } from 'components'
 
 const Wrapper = styled(Block)`
   display: flex;
@@ -86,7 +74,7 @@ const BioShort = (props) => {
     <Wrapper opaque reverse {...props}>
       <InnerWrapper>
         <Section>
-      {/*}  <Bio
+          {/*}  <Bio
           image="sleeping.png"
           link="https://github.com/diegohaz/arc/tree/redux"
         >
@@ -94,18 +82,21 @@ const BioShort = (props) => {
         </Bio>*/}
         </Section>
         <Section>
-        <Text>
+          <Text>
             This is my website, written in {' '}
             <IconLink reverse icon="react" href="https://facebook.github.io/react/">React</IconLink>
             {' '}
             , following based on the
             {' '}
-              <IconLink reverse icon="atomic-design" href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</IconLink>
+            <IconLink reverse icon="atomic-design" href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic
+              Design</IconLink>
             {' '}
             methodology. The goal is to have a fully functional blog engine created in{' '}
-            <Link reverse href="http://bradfrost.com/blog/post/atomic-web-design/">NodeJS</Link> complete with an Oauth2 login system, in which I plan to go over the projects I am Involved in, and what I learn from them each week.
+            <Link reverse href="http://bradfrost.com/blog/post/atomic-web-design/">NodeJS</Link> complete with an Oauth2
+            login system, in which I plan to go over the projects I am Involved in, and what I learn from them each
+            week.
 
-        </Text>
+          </Text>
         </Section>
       </InnerWrapper>
     </Wrapper>

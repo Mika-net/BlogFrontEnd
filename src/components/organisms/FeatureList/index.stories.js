@@ -4,5 +4,5 @@ import { FeatureList } from 'components'
 
 storiesOf('FeatureList', module)
   .add('default', () => (
-    <FeatureList />
+    <FeatureList/>
   ))

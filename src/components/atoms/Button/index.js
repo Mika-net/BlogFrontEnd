@@ -55,7 +55,8 @@ const Button = ({ type, ...props }) => {
   const { to, href } = props
   if (to) {
     return <StyledLink {...props} />
-  } if (href) {
+  }
+  if (href) {
     return <Anchor {...props} />
   }
   return <StyledButton {...props} type={type} />
@@ -73,7 +74,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  palette: 'grayscale',
+  palette: 'greyscale',
   type: 'button',
   height: 40,
 }

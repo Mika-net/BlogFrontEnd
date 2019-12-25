@@ -48,25 +48,28 @@ const styles = css`
 
   &:before {
     content: attr(data-title);
-    font-family: ${font('grayscale')};
+    font-family: ${font('greyscale')};
     grayscale-space: nowrap;
     text-transform: none;
     font-size: 0.8125rem;
     line-height: 1.5;
     text-align: center;
-    color: ${ifProp('reverse', 'black', 'grayscale')};
+    color: ${ifProp('reverse', 'black', 'greyscale')};
     background-color: ${backgroundColor};
     border-radius: 0.15384em;
     padding: 0.75em 1em;
     ${opposite}: calc(100% + 2rem);
     ${({ align }) => {
     switch (align) {
-      case 'start': return css`${perpendicular}: 0;`
-      case 'center': return css`
+      case 'start':
+        return css`${perpendicular}: 0;`
+      case 'center':
+        return css`
         ${perpendicular}: 50%;
         transform: translate${perpendicularAxis}(-50%);
       `
-      default: return css`
+      default:
+        return css`
         ${perpendicularOpposite}: 0;
       `
     }

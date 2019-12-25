@@ -91,8 +91,8 @@ const StyledReactModal = styled(({ className, ...props }) => (
 ))`${overlayStyles}`
 
 const Modal = ({
-  children, title, closeable, onClose, ...props
-}) => {
+                 children, title, closeable, onClose, ...props
+               }) => {
   const { reverse } = props
   const hasHeader = title || closeable
   return (
@@ -103,12 +103,12 @@ const Modal = ({
       {...props}
     >
       {hasHeader
-        && (
+      && (
         <Header>
           <StyledHeading level={2} reverse={reverse}>{title}</StyledHeading>
-          {closeable && <IconButton icon="close" onClick={onClose} palette="grayscale" reverse />}
+          {closeable && <IconButton icon="close" onClick={onClose} palette="grayscale" reverse/>}
         </Header>
-        )
+      )
       }
       <Content>
         {children}

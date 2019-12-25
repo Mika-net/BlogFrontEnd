@@ -3,5 +3,5 @@ import { shallow } from 'enzyme'
 import GenericPage from '.'
 
 it('renders', () => {
-  shallow(<GenericPage />)
+  shallow(<GenericPage/>)
 })

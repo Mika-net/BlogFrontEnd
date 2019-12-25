@@ -4,5 +4,5 @@ import { Header } from 'components'
 
 storiesOf('Header', module)
   .add('default', () => (
-    <Header />
+    <Header/>
   ))

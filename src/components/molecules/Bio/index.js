@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { ifProp } from 'styled-tools'
 
-import {
-  Image, Link, Paragraph, Heading, Badge, PreformattedText,
-} from 'components'
+import { Badge, Heading, Image, Link, Paragraph, PreformattedText } from 'components'
 
 const Wrapper = styled.div`
   position: relative;
@@ -44,12 +42,12 @@ const StyledBadge = styled(Badge)`
 `
 
 const Bio = ({
-  image, title, link, code, children, ...props
-}) => {
+               image, title, link, code, children, ...props
+             }) => {
   const { soon } = props
   return (
     <Wrapper {...props}>
-      {image && <StyledImage image={image} width={164} />}
+      {image && <StyledImage image={image} width={164}/>}
       <Text>
         <Heading level={2}>
           {link ? <Link href={link}>{title}</Link> : title}

@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { ifProp } from 'styled-tools'
-
 import {
-  Icon, Link, Paragraph, Heading, Badge, PreformattedText,
+  Badge, Heading, Icon, Link, Paragraph, PreformattedText
 } from 'components'
 
 const Wrapper = styled.div`
@@ -49,7 +48,7 @@ const Feature = ({
   const { soon } = props
   return (
     <Wrapper {...props}>
-      {icon && <StyledIcon icon={icon} width={64} />}
+      {icon && <StyledIcon icon={icon} width={64}/>}
       <Text>
         <Heading level={2}>
           {link ? <Link href={link}>{title}</Link> : title}
@@ -57,7 +56,7 @@ const Feature = ({
         <Paragraph>{children}</Paragraph>
         {code && <PreformattedText block>{code}</PreformattedText>}
       </Text>
-      {soon && <StyledBadge palette="grayscale">soon</StyledBadge>}
+      {soon && <StyledBadge palette="greyscale">soon</StyledBadge>}
     </Wrapper>
   )
 }

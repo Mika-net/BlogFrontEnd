@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { css, keyframes } from 'styled-components'
 import { ifProp, prop } from 'styled-tools'
 
-import { Icon, Button } from 'components'
+import { Button, Icon } from 'components'
 
 const fadeIn = keyframes`
   0% { display: none; opacity: 0; }
@@ -63,13 +63,13 @@ const IconButton = ({ icon, children, ...props }) => {
   const {
     breakpoint, right, responsive, height,
   } = props
-  const iconElement = <StyledIcon height={height ? height / 2.5 : undefined} icon={icon} />
+  const iconElement = <StyledIcon height={height ? height / 2.5 : undefined} icon={icon}/>
   return (
     <StyledButton hasText={!!children} {...props}>
       <Wrapper>
         {right || iconElement}
         {children
-          && <Text className="text" responsive={responsive} breakpoint={breakpoint}>{children}</Text>
+        && <Text className="text" responsive={responsive} breakpoint={breakpoint}>{children}</Text>
         }
         {right && iconElement}
       </Wrapper>

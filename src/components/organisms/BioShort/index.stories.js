@@ -4,5 +4,5 @@ import { BioShort } from 'components'
 
 storiesOf('BioShort', module)
   .add('default', () => (
-    <BioShort />
+    <BioShort/>
   ))

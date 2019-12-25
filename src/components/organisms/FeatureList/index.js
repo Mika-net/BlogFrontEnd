@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {
-  Feature, Link, Heading, Paragraph,
-} from 'components'
+import { Feature, Heading, Link, Paragraph } from 'components'
 
 const Grid = styled.div`
   display: flex;
@@ -40,7 +38,7 @@ const FeatureList = ({ ...props }) => (
     <StyledHeading>Basic stack</StyledHeading>
     <Description>
       It includes everything necessary to build a tipical web app with focus on productivity and developer experience.
-      <br />
+      <br/>
       <Link href="https://github.com/diegohaz/arc/wiki/Workflow">Learn more about the recomended workflow</Link>
     </Description>
     <Grid>
@@ -70,7 +68,7 @@ const FeatureList = ({ ...props }) => (
         {' '}
         <Link href="https://webpack.github.io/docs/hot-module-replacement.html">Hot Module Replacement</Link>
         {' '}
-enabled.
+        enabled.
       </StyledFeature>
       <StyledFeature
         icon="jest"

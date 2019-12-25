@@ -127,8 +127,8 @@ const Text = styled.span`
 `
 
 const Slider = ({
-  id, min, max, defaultValue, step, ...props
-}) => {
+                  id, min, max, defaultValue, step, ...props
+                }) => {
   const { breakpoint, responsive } = props
   return (
     <Wrapper {...props}>

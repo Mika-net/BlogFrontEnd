@@ -19,7 +19,7 @@ const Wrapper = styled.span`
   box-sizing: border-box;
 `
 
-const Image = ({ image, ...props }) => <img  {...props} src={`/images/${image}`}/>
+const Image = ({ image, ...props }) => <img {...props} src={`/images/${image}`} alt="" />
 
 
 Image.propTypes = {

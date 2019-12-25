@@ -4,8 +4,8 @@ import { PrimaryNavigation } from 'components'
 
 storiesOf('PrimaryNavigation', module)
   .add('default', () => (
-    <PrimaryNavigation />
+    <PrimaryNavigation/>
   ))
   .add('reverse', () => (
-    <PrimaryNavigation reverse />
+    <PrimaryNavigation reverse/>
   ))

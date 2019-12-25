@@ -4,5 +4,5 @@ import { GenericPage } from 'components'
 
 storiesOf('GenericPage', module)
   .add('default', () => (
-    <GenericPage />
+    <GenericPage/>
   ))

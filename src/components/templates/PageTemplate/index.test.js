@@ -12,25 +12,30 @@ it('mounts', () => {
 
 it('renders children when passed in', () => {
   const wrapper = wrap()
-  expect(wrapper.contains('test')).toBe(true)
+  expect(wrapper.contains('test'))
+    .toBe(true)
 })
 
 it('renders header', () => {
   const wrapper = wrap()
-  expect(wrapper.contains('header')).toBe(true)
+  expect(wrapper.contains('header'))
+    .toBe(true)
 })
 
 it('renders BioShort', () => {
   const wrapper = wrap({ bioShort: 'bioShort' })
-  expect(wrapper.contains('bioShort')).toBe(true)
+  expect(wrapper.contains('bioShort'))
+    .toBe(true)
 })
 
 it('renders sponsor', () => {
   const wrapper = wrap({ sponsor: 'sponsor' })
-  expect(wrapper.contains('sponsor')).toBe(true)
+  expect(wrapper.contains('sponsor'))
+    .toBe(true)
 })
 
 it('renders footer', () => {
   const wrapper = wrap()
-  expect(wrapper.contains('footer')).toBe(true)
+  expect(wrapper.contains('footer'))
+    .toBe(true)
 })

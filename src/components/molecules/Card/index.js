@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { ifProp } from 'styled-tools'
 
-import {
-  Image, Link, Paragraph, Heading, Badge, PreformattedText, IconLink,
-} from 'components'
+import { Heading, Link, Paragraph } from 'components'
 
 const Wrapper = styled.div`
   position: relative;
@@ -153,41 +151,41 @@ body {
     }
 }
 `
-  const Card = ({
-    image, title, link, children, ...props
-  }) => {
-    const { soon } = props
-    return (
-      <Wrapper {...props}>
+const Card = ({
+                image, title, link, children, ...props
+              }) => {
+  const { soon } = props
+  return (
+    <Wrapper {...props}>
 
-<div className="fm-card">
-  <div className="fm-card-header">
-      <img src={image}alt=""></img>
-  </div>
-  <div className="fm-card-content">
-      <Heading level={4}>
-      {link ? <Link href={link}>{title}</Link> : title}
-   </Heading>
-      <Paragraph>
-          <p>{children}</p>
-      </Paragraph>
+      <div className="fm-card">
+        <div className="fm-card-header">
+          <img src={image} alt=""></img>
+        </div>
+        <div className="fm-card-content">
+          <Heading level={4}>
+            {link ? <Link href={link}>{title}</Link> : title}
+          </Heading>
+          <Paragraph>
+            <p>{children}</p>
+          </Paragraph>
 
-        <Link href={link}>learn more</Link>}
-  </div>
+          <Link href={link}>learn more</Link>}
+        </div>
 
-</div>
-      </Wrapper>
-    )
-  }
+      </div>
+    </Wrapper>
+  )
+}
 
 
-  Card.propTypes = {
-    title: PropTypes.string.isRequired,
-    image: PropTypes.string,
-    link: PropTypes.string,
-    soon: PropTypes.bool,
-    children: PropTypes.any,
-    code: PropTypes.node,
-  }
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  link: PropTypes.string,
+  soon: PropTypes.bool,
+  children: PropTypes.any,
+  code: PropTypes.node,
+}
 
-  export default Card
+export default Card

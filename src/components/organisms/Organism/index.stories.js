@@ -4,8 +4,8 @@ import { Organism } from 'components'
 
 storiesOf('Organism', module)
   .add('default', () => (
-    <Organism />
+    <Organism/>
   ))
   .add('reverse', () => (
-    <Organism reverse />
+    <Organism reverse/>
   ))
