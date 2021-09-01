@@ -1,13 +1,13 @@
 import React from 'react'
 
 import {
-  Footer, Header, Heading, PageTemplate,
+  Footer, Header, PageTemplate, BlogList,
 } from 'components'
 
 const BlogPage = () => {
   return (
     <PageTemplate header={<Header />} footer={<Footer />}>
-      <Heading>This feature is under development</Heading>
+      <BlogList />
     </PageTemplate>
   )
 }

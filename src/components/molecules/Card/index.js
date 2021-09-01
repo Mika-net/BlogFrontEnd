@@ -152,15 +152,14 @@ body {
 }
 `
 const Card = ({
-                image, title, link, children, ...props
-              }) => {
-  const { soon } = props
+  image, title, link, children, ...props
+}) => {
   return (
     <Wrapper {...props}>
 
       <div className="fm-card">
         <div className="fm-card-header">
-          <img src={image} alt=""></img>
+          <img src={image} alt="" />
         </div>
         <div className="fm-card-content">
           <Heading level={4}>
@@ -169,10 +168,8 @@ const Card = ({
           <Paragraph>
             <p>{children}</p>
           </Paragraph>
-
-          <Link href={link}>learn more</Link>}
+          <Link href={link}>learn more</Link>
         </div>
-
       </div>
     </Wrapper>
   )
