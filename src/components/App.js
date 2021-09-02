@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { injectGlobal, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import {
   BlogPage, HomePage, NotFoundPage, ProjectsPage,
 } from 'components'
@@ -8,7 +8,7 @@ import {
 import theme from './themes/default'
 import BlogPostPage from './pages/BlogPostPage'
 
-injectGlobal`
+const globalStyle = createGlobalStyle`
   body {
     margin: 0;
   }

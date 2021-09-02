@@ -8,7 +8,6 @@ const HappyPack = require('happypack')
 const mergeWith = require('lodash/mergeWith')
 const isArray = require('lodash/isArray')
 
-
 const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 3000
 const sourceDir = process.env.SOURCE || 'src'
@@ -28,7 +27,7 @@ const wpConfig = {
     module: {
       rules: [
         { test: /\.jsx?$/, exclude: /node_modules/, use: 'happypack/loader' },
-        { test: /\.(png|jpe?g|svg|woff2?|ttf|eot)$/, loader: 'url-loader?limit=8000' },
+        { test: /\.(png|jpe?g|svg|woff2?|ttf|eot)$/, loader: 'url-loader' },
       ],
     },
     plugins: [
@@ -43,6 +42,9 @@ const wpConfig = {
       new webpack.DefinePlugin({
         NODE_ENV: process.env.NODE_ENV,
         PUBLIC_PATH: publicPath.replace(/\/$/, ''),
+      }),
+      new webpack.ProvidePlugin({
+        process: 'process/browser',
       }),
     ],
     resolve: {
@@ -71,16 +73,15 @@ const wpConfig = {
     devtool: 'cheap-module-source-map',
     devServer: {
       hot: true,
+      static: 'public',
+      open: true,
       historyApiFallback: { index: publicPath },
-      inline: true,
-      contentBase: 'public',
       headers: { 'Access-Control-Allow-Origin': '*' },
       host,
       port,
-      stats: 'errors-only',
     },
     optimization: {
-      namedModules: true,
+      moduleIds: 'named',
     },
   },
   production: {
