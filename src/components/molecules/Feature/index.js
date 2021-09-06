@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { ifProp } from 'styled-tools'
 import {
-  Badge, Heading, Icon, Link, Paragraph, PreformattedText
+  Badge, Heading, BigIcon, Link, Paragraph, PreformattedText,
 } from 'components'
 
 const Wrapper = styled.div`
@@ -17,11 +17,8 @@ const Wrapper = styled.div`
   }
 `
 
-const StyledIcon = styled(Icon)`
+const StyledIcon = styled(BigIcon)`
   flex: none;
-  @media screen and (max-width: 640px) {
-    width: 32px;
-  }
 `
 
 const Text = styled.div`
@@ -48,7 +45,7 @@ const Feature = ({
   const { soon } = props
   return (
     <Wrapper {...props}>
-      {icon && <StyledIcon icon={icon} width={64}/>}
+      {icon && <StyledIcon icon={icon} />}
       <Text>
         <Heading level={2}>
           {link ? <Link href={link}>{title}</Link> : title}

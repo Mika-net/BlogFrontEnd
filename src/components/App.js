@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 import {
   BlogPage, HomePage, NotFoundPage, ProjectsPage,
 } from 'components'
@@ -8,15 +8,9 @@ import {
 import theme from './themes/default'
 import BlogPostPage from './pages/BlogPostPage'
 
-const globalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-  }
-`
-
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} margin={0}>
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/blog" component={BlogPage} exact />

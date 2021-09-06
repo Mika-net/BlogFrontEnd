@@ -27,7 +27,8 @@ const wpConfig = {
     module: {
       rules: [
         { test: /\.jsx?$/, exclude: /node_modules/, use: 'happypack/loader' },
-        { test: /\.(png|jpe?g|svg|woff2?|ttf|eot)$/, loader: 'url-loader' },
+        { test: /\.(png|jpe?g|woff2?|ttf|eot)$/, loader: 'url-loader' },
+        { test: /\.svg?$/, loader: 'svg-url-loader' },
       ],
     },
     plugins: [

@@ -14,8 +14,8 @@ const Wrapper = styled.img`
   display: inline-block;
   font-size: ${fontSize};
   color: ${ifProp('palette', palette({ grayscale: 0 }, 1), 'currentcolor')};
-  width: 1em;
-  height: 1em;
+  width: 4em;
+  height: 4em;
   margin: 0.1em;
   box-sizing: border-box;
 
@@ -27,13 +27,13 @@ const Wrapper = styled.img`
   }
 `
 
-const Icon = ({ icon, ...props }) => {
+const BigIcon = ({ icon, ...props }) => {
   const svg = require(`!svg-url-loader!./icons/${icon}.svg`)
   console.log(svg)
   return <Wrapper src={svg} />
 }
 
-Icon.propTypes = {
+BigIcon.propTypes = {
   icon: PropTypes.string.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
@@ -41,4 +41,4 @@ Icon.propTypes = {
   reverse: PropTypes.bool,
 }
 
-export default Icon
+export default BigIcon

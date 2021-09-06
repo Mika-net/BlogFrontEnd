@@ -28,8 +28,8 @@ const Text = styled.span`
 `
 
 const IconLink = ({
-                    height, icon, right, responsive, children, ...props
-                  }) => {
+  height, icon, right, responsive, children, ...props
+}) => {
   const { palette, reverse } = props
   const iconElement = (
     <StyledIcon

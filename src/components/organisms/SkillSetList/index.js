@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import { Feature, Heading, Paragraph } from 'components'
 
-
 const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -33,7 +32,6 @@ const StyledFeature = styled(Feature)`
     margin: 0;
   }
 `
-
 
 const SkillSetList = ({ ...props }) => (
   <div {...props}>

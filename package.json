@@ -100,6 +100,7 @@
     "semantic-ui-react": "^2.0.3",
     "styled-components": "^5.3.1",
     "styled-theme": "^0.3.3",
-    "styled-tools": "^1.6.0"
+    "styled-tools": "^1.6.0",
+    "svg-url-loader": "^7.1.1"
   }
 }
