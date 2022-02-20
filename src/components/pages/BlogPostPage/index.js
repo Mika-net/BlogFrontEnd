@@ -6,12 +6,13 @@ import {
 import {
   Footer, Header, PageTemplate, ProjectsList,
 } from 'components'
+import Heading from '../../atoms/Heading'
 
 const BlogPostPage = () => {
   const { id } = useParams()
   return (
     <PageTemplate header={<Header />} footer={<Footer />}>
-      <h1>{id}</h1>
+      <Heading>{id}</Heading>
       <ProjectsList />
     </PageTemplate>
   )
